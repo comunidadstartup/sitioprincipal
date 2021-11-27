@@ -1,0 +1,46 @@
+@use "../../styles/theme/mixins.scss" as *;
+
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 200vh;
+	height: auto;
+	&.primary {
+		@include theme("background-color", "background", "primary");
+	}
+	&.secondary {
+		@include theme("background-color", "background", "secondary");
+	}
+	& > [data-block] {
+		justify-content: center;
+		min-height: 100vh;
+		height: auto;
+	}
+	& > [data-step] {
+		justify-content: center;
+		min-height: 100vh;
+		height: auto;
+	}
+	& > [data-flex] {
+		flex-direction: unset !important;
+		align-items: unset !important;
+		justify-content: unset !important;
+		min-height: 100vh;
+		height: auto;
+		padding: 10%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.section {
+		& > [data-block] {
+			& p {
+				text-align: center;
+			}
+		}
+	}
+}

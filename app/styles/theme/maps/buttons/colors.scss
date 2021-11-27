@@ -1,0 +1,18 @@
+@use "../../variables/colors/colors.scss" as *;
+
+$buttonFont: (
+	"light": (
+		"buttonFont": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+	),
+	"dark": (
+		"buttonFont": (
+			"primary": $rojo-oscuro,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+	),
+);

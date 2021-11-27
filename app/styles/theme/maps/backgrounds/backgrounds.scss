@@ -1,0 +1,18 @@
+@use "../../variables/colors/colors.scss" as *;
+
+$backgrounds: (
+	"light": (
+		"background": (
+			"primary": $leche,
+			"secondary": $rojo-claro,
+			"tertiary": $blanco,
+		),
+	),
+	"dark": (
+		"background": (
+			"primary": $leche-oscura,
+			"secondary": $rojo-oscuro,
+			"tertiary": $gris-texto,
+		),
+	),
+);

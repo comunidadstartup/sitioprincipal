@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "./maps/backgrounds/backgrounds.scss" as *;
+@use "./maps/texts/colors.scss" as *;
+@use "./maps/texts/sizes.scss" as *;
+@use "./maps/buttons/buttons.scss" as *;
+@use "./maps/buttons/colors.scss" as *;
+
+$mapA: map.deep-merge($backgrounds, $textColors);
+$mapB: map.deep-merge($mapA, $buttonFont);
+$mapC: map.deep-merge($mapB, $sizes);
+$theme: map.deep-merge($mapC, $buttons);

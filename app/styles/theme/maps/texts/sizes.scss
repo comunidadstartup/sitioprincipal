@@ -1,0 +1,86 @@
+$size-x-1: 4.5rem;
+$size-x-2: 4rem;
+$size-x-3: 3rem;
+$size-l-1: 2.5rem;
+$size-l-2: 2.2rem;
+$size-l-3: 2rem;
+$size-m-1: 1.5rem;
+$size-m-2: 1.1rem;
+$size-m-3: 1rem;
+
+$sizes: (
+	"mobile": (
+		"h1": (
+			"primary": $size-x-2,
+			"secundary": $size-x-3,
+			"tertiary": $size-l-1,
+		),
+		"h2": (
+			"primary": $size-x-2,
+			"secundary": $size-x-3,
+			"tertiary": $size-l-1,
+		),
+		"h3": (
+			"primary": $size-x-2,
+			"secundary": $size-x-3,
+			"tertiary": $size-l-1,
+		),
+		"h4": (
+			"primary": $size-l-1,
+			"secundary": $size-l-2,
+			"tertiary": $size-l-3,
+		),
+		"h5": (
+			"primary": $size-l-1,
+			"secundary": $size-l-2,
+			"tertiary": $size-l-3,
+		),
+		"h6": (
+			"primary": $size-m-1,
+			"secundary": $size-m-2,
+			"tertiary": $size-m-3,
+		),
+		"p": (
+			"primary": $size-m-1,
+			"secundary": $size-m-2,
+			"tertiary": $size-m-3,
+		),
+	),
+	"other": (
+		"h1": (
+			"primary": $size-x-1,
+			"secundary": $size-x-2,
+			"tertiary": $size-x-3,
+		),
+		"h2": (
+			"primary": $size-x-1,
+			"secundary": $size-x-2,
+			"tertiary": $size-x-3,
+		),
+		"h3": (
+			"primary": $size-x-1,
+			"secundary": $size-x-2,
+			"tertiary": $size-x-3,
+		),
+		"h4": (
+			"primary": $size-l-1,
+			"secundary": $size-l-2,
+			"tertiary": $size-l-3,
+		),
+		"h5": (
+			"primary": $size-l-1,
+			"secundary": $size-l-2,
+			"tertiary": $size-l-3,
+		),
+		"h6": (
+			"primary": $size-m-1,
+			"secundary": $size-m-2,
+			"tertiary": $size-m-3,
+		),
+		"p": (
+			"primary": $size-m-1,
+			"secundary": $size-m-2,
+			"tertiary": $size-m-3,
+		),
+	),
+);

@@ -1,0 +1,24 @@
+@use "../../../styles/theme/mixins.scss" as *;
+
+.button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #ff7e79;
+	&.primary {
+		@include theme("background-color", "button", "primary");
+	}
+	&.secondary {
+		@include theme("background-color", "button", "secondary");
+	}
+	border: none;
+	svg {
+		width: 24px;
+		height: 24px;
+		fill: #fff;
+	}
+}

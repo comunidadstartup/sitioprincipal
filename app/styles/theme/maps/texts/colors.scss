@@ -1,0 +1,78 @@
+@use "../../variables/colors/colors.scss" as *;
+
+$textColors: (
+	"light": (
+		"h1": (
+			"primary": $rojo-fuerte,
+			"secondary": $rojo-claro,
+			"tertiary": $blanco,
+		),
+		"h2": (
+			"primary": $rojo-claro,
+			"secondary": $rojo-fuerte,
+			"tertiary": $blanco,
+		),
+		"h3": (
+			"primary": $rojo-fuerte,
+			"secondary": $gris-texto,
+			"tertiary": $blanco,
+		),
+		"h4": (
+			"primary": $gris-texto,
+			"secondary": $rojo-fuerte,
+			"tertiary": $rojo-claro,
+		),
+		"h5": (
+			"primary": $gris-texto,
+			"secondary": $rojo-fuerte,
+			"tertiary": $rojo-claro,
+		),
+		"h6": (
+			"primary": $rojo-claro,
+			"secondary": $rojo-fuerte,
+			"tertiary": $gris-texto,
+		),
+		"p": (
+			"primary": $gris-texto,
+			"secondary": $blanco,
+			"tertiary": $rojo-claro,
+		),
+	),
+	"dark": (
+		"h1": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+		"h2": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+		"h3": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+		"h4": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+		"h5": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+		"h6": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+		"p": (
+			"primary": $blanco,
+			"secondary": $blanco,
+			"tertiary": $blanco,
+		),
+	),
+);

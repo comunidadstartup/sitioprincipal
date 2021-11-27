@@ -1,0 +1,277 @@
+@use "./theme/index.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	@include theme("background-color", "background", "primary");
+	font-family: 'Raleway', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1280px;
+	width: 100%;
+}
+
+button {
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
+	font-size: 1rem;
+	border: none;
+	appearance: none;
+}
+
+input,
+textarea {
+	&:focus {
+		outline: none;
+	}
+	font-size: 1rem;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	box-shadow: none;
+	border-radius: 5px;
+}
+
+textarea {
+	padding: 1rem;
+}
+
+input {
+	&[type="text"] {
+		padding: 0px 1rem;
+	}
+	height: 40px;
+}
+
+i {
+	font-weight: normal;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+p,
+.p {
+	font-size: 30px;
+	font-size: 2rem;
+	font-weight: normal;
+	margin-bottom: 3rem;
+	line-height: 3rem;
+	&:only-of-type,
+	&:last-of-type {
+		margin: 0px;
+	}
+	&.primary {
+		@include theme("color", "p", "primary");
+	}
+	&.secondary {
+		@include theme("color", "p", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "p", "tertiary");
+	}
+}
+
+h1,
+.h1 {
+	font-size: 72px;
+	font-size: 4.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	&.primary {
+		@include theme("color", "h1", "primary");
+	}
+	&.secondary {
+		@include theme("color", "h1", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "h1", "tertiary");
+	}
+}
+
+h2,
+.h2 {
+	font-size: 64px;
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	&.primary {
+		@include theme("color", "h2", "primary");
+	}
+	&.secondary {
+		@include theme("color", "h2", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "h2", "tertiary");
+	}
+}
+
+h3,
+.h3 {
+	font-size: 48px;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	&.primary {
+		@include theme("color", "h3", "primary");
+	}
+	&.secondary {
+		@include theme("color", "h3", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "h3", "tertiary");
+	}
+}
+
+h4,
+.h4 {
+	font-size: 40px;
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	&.primary {
+		@include theme("color", "h4", "primary");
+	}
+	&.secondary {
+		@include theme("color", "h4", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "h4", "tertiary");
+	}
+}
+
+h5,
+.h5 {
+	font-size: 35px;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	&.primary {
+		@include theme("color", "h5", "primary");
+	}
+	&.secondary {
+		@include theme("color", "h5", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "h5", "tertiary");
+	}
+}
+
+h6,
+.h6 {
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:last-of-type {
+		margin-bottom: 2rem;
+	}
+	&.primary {
+		@include theme("color", "h6", "primary");
+	}
+	&.secondary {
+		@include theme("color", "h6", "secondary");
+	}
+	&.tertiary {
+		@include theme("color", "h6", "tertiary");
+	}
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.p {
+	text-align: left;
+}
+
+@media only screen and (max-width: 640px) {
+	h1,
+	.h1,
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6,
+	p,
+	.p {
+		text-align: center;
+	}
+	p,
+	.p {
+		font-size: 16px;
+		font-size: 1.5rem;
+	}
+	h1,
+	.h1 {
+		font-size: 50px;
+		font-size: 3rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 40px;
+		font-size: 2.5rem;
+	}
+
+	h3,
+	.h3 {
+		font-size: 25px;
+		font-size: 2.2rem;
+	}
+	h4,
+	.h4 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+}

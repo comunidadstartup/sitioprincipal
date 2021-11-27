@@ -1,0 +1,38 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	border-left-width: 0.5rem;
+	border-left-style: solid;
+	border-left-color: #000;
+	padding-left: 1rem;
+	& > h3 {
+		font-size: 2rem;
+		line-height: 2rem;
+		margin-bottom: 1rem;
+	}
+	& > h4 {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	& > p {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+	& > * {
+		text-align: left !important;
+	}
+	&:last-child {
+		margin: unset;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.card {
+		border-left-color: #fff;
+	}
+}

@@ -1,0 +1,33 @@
+@use "../../mixins/displays/displays.scss" as *;
+
+.flex_rc {
+	@include flex(row, center);
+}
+
+.flex_rfsc {
+	@include flex(row, flex-start, center);
+}
+
+.flex_rfs {
+	@include flex(row, flex-start);
+}
+
+.flex_rcfs {
+	@include flex(row, center, flex-start);
+}
+
+.flex_cc {
+	@include flex(column, center);
+}
+
+.flex_cfsc {
+	@include flex(column, flex-start, center);
+}
+
+.flex_cfs {
+	@include flex(column, flex-start);
+}
+
+.flex_ccfs {
+	@include flex(column, center, flex-start);
+}
